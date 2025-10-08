@@ -12,11 +12,11 @@ Part 2
 Technique: Procedural holes + contour extraction
 The effect is achieved through a time-varying scalar field and marching cubes. OpenSimplex noise3D(xoff, yoff, zoff) fills the network. For each cell, getState() maps the four corners to a case, and switches to draw the correct contour segments, showing the constantly changing "tearing" outline. Place this contour layer on the woven mesh, and then use p5's drawingContext.setLineDash to redraw the edges for grayish-white stitching lines.
 
-![Boro/Sashiko 1](assets/boro1.jpg)
-![Boro/Sashiko 2](assets/boro2.jpg)
+![Boro/Sashiko 1](boro1.jpg)
+![Boro/Sashiko 2](boro2.jpg)
 
 
-![Marching Squares demo](assets/ms-demo.jpg)
+![Marching Squares demo](ms-demo.jpg)
 
 ## References / Example code
 - <link to museum page>
