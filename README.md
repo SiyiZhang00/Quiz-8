@@ -11,7 +11,12 @@ My inspiration comes from visible mending (Boro/Sashiko). The background is a re
 Part 2
 Technique: Procedural holes + contour extraction
 
-The effect is achieved through a time-varying scalar field and marching cubes. OpenSimplex noise3D(xoff, yoff, zoff) fills the network. For each cell, getState() maps the four corners to a case, and switches to draw the correct contour segments, showing the constantly changing "tearing" outline. Place this contour layer on the woven mesh, and then use p5's drawingContext.setLineDash to redraw the edges for grayish-white stitching lines.
+The effect is achieved through a time-varying scalar field and Marching Squares. OpenSimplex noise3D(xoff, yoff, zoff) fills the network. For each cell, getState() maps the four corners to a case, and switches to draw the correct contour segments, showing the constantly changing "tearing" outline. Place this contour layer on the woven mesh, and then use p5's drawingContext.setLineDash to redraw the edges for grayish-white stitching lines.
+- The Coding Train — Marching Squares（讲解与代码）
+- p5 reference: erase()
+- p5 reference: drawingContext
+- MDN: CanvasRenderingContext2D.setLineDash()
+
 
 ![Boro/Sashiko 1](boro1.jpg)
 ![Boro/Sashiko 2](boro2.jpg)
